@@ -1,0 +1,62 @@
+.h2GameOver {
+  color: #eeee2a;
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.word {
+  padding-top: 25px;
+}
+
+.word span {
+  color: #eeee2a;
+  font-size: 1em;
+  margin-top: 1000px;
+  margin-bottom: 100px;
+}
+
+.buttonGameOver {
+  display: inline-block;
+  background: transparent;            
+  text-align: center;
+  padding: 20px 40px;            
+  font-weight: bold;
+  font-size: 20px;            
+  color: #fff;
+  cursor: pointer;            
+  border: 2px solid #fff;
+  text-transform: uppercase;            
+  border-radius: 28px;
+  transition: .5s;            
+  box-shadow: 0 5px 20px 0 rgb(198 121 227 / 25%);
+}
+.buttonGameOver:before,
+.buttonGameOver:after{
+  background: #fff;
+  content: "";
+  position: absolute;              
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: .5s;
+}
+.buttonGameOver:before{
+  left: 0;
+  border-radius: 25px 0 0 25px;
+}
+.buttonGameOver:after{
+  right: 0;
+  border-radius: 0 25px 25px 0;
+}
+
+.buttonGameOver:hover {
+  color: black;            
+  transform: translateY(0);
+  box-shadow: 0 5px 20px 0 rgb(68 206 111 / 25%);
+}        
+.buttonGameOver:hover:before, .buttonGameOver:hover:after {
+  width: 50.5%; 
+  background: #fff;   
+}

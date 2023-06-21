@@ -1,0 +1,107 @@
+.game h1 {
+  font-size: 2.5em;
+}
+
+.points span {
+  font-weight: bold;
+}
+
+.tip span {
+  color: #ecfa00;
+}
+
+.wordContainer {
+  margin: 1.5em;
+  padding: 1.5em;
+  border: 20px solid #ecfa00;
+  display: flex;
+  justify-content: center;
+}
+
+.letter, .blankSquare {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid black;
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+
+.letterContainer {
+  margin-bottom: 1.5em;
+}
+
+.letterContainer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letterContainer input {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.wrongLetter {
+  text-transform: uppercase;
+}
+
+.letterContainer button {
+  height: 60px;
+  width: 170px;
+  font-size: 1.7em;
+  text-align: center;
+  margin-right: 1em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.letterContainer button:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .letterContainer button {
+    height: 50px;
+    width: 150px;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 1em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+  }
+  .wordContainer {
+    margin: 1em;
+    padding: 0.5em;
+    border: 7px solid #ecfa00;
+    display: flex;
+  }
+  .letter, .blankSquare {
+    font-size: 40px;
+    line-height: 1.5;
+    border: 3px solid black;
+    height: 50px;
+    width: 50px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+  }
+}
